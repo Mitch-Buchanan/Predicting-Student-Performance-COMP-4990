@@ -24,7 +24,7 @@ const questions: Question[] = [
     },
     {
         id: 2,
-        text: 'What were your previous scores (out of 100)?',
+        text: 'What was your average score on previous exams (0-100)?',
         type: 'number',
         inputProps: { step: '1', min: '0', max: '100' },
         key: 'previousScores'
@@ -38,7 +38,7 @@ const questions: Question[] = [
     },
     {
         id: 4,
-        text: 'What is your typical attendance percentage?',
+        text: 'How often do you attend class? (0-100%)',
         type: 'number',
         inputProps: { step: '1', min: '0', max: '100' },
         key: 'attendance'
@@ -114,7 +114,7 @@ const questions: Question[] = [
     },
     {
         id: 12,
-        text: 'What is your access to learning resources?',
+        text: 'How is your access to learning resources?',
         type: 'selection',
         options: [
             { label: 'Low', value: 'Low' },
@@ -125,7 +125,7 @@ const questions: Question[] = [
     },
     {
         id: 13,
-        text: 'What is your motivation level?',
+        text: 'How is your motivation level?',
         type: 'selection',
         options: [
             { label: 'Low', value: 'Low' },
@@ -147,7 +147,7 @@ const questions: Question[] = [
     },
     {
         id: 15,
-        text: "What is your teacher's quality?",
+        text: "How are your teachers' quality?",
         type: 'selection',
         options: [
             { label: 'Low', value: 'Low' },

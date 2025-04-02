@@ -16,7 +16,8 @@ export default function ModelChoice() {
         "Answer a few questions about your study routines and environment to see how your letter grade might look.",
     },
     {
-      title: "Percentage Grade",
+      title: "Predict Your Percentage Score",
+      subtitle: "Answer questions about your study habits and learning environment to see your predicted exam percentage.",
       route: "/linear-regression",
       description:
         "This questionnaire collects information about your study habits and academic environment to predict your exam score percentage.",

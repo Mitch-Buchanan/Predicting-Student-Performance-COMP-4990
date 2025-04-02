@@ -26,7 +26,7 @@ and test the performance on the same previous scenarios.
 9) Try the following models: Linear Regression, Decision Tree, Random Forest, Support Vector Regression, Gradient Boosting, XGBoost, Ridge, Lasso
 
 
-10) ^^^ Case 7 + Case 2 (i.e. removing outlier then dropping weak features) ^^^
+10) ^^^ Case 7 + Case 2 (i.e. removing outlier and dropping weak features) ^^^
 
 
 11) Case 10 + Case 8 (Polynomial Regression with degrees 1-3)
@@ -35,7 +35,7 @@ and test the performance on the same previous scenarios.
 12) Case 10 + Case 9 (Trying out different models)
 
 
-13) SYNTHETIC DATASET + CASE 10
+13) ^^^ SYNTHETIC DATASET + CASE 10 ^^^
 
 
 
@@ -197,7 +197,7 @@ demographics removed ('Gender', 'Internet_Access'):
 R² Score: 0.8185
 RMSE: 1.5494
 
-** Since Sleep_Hours + School_Type removed was best, I tried with all other features as a third feature to be removed, but R² Score was always < 0.82 **
+** Since Sleep_Hours + School_Type removed was best, I tried with all other weak features as a third feature to be removed, but R² Score was always < 0.82 **
 
 
 

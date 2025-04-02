@@ -74,11 +74,14 @@ So numerical features don't need explicit baselines because:
 
 Flow of execution:
 
-1. Feature Impact Analysis:
+1. main.ipynb                      # Used original dataset to train and test model but realized that the dataset's range of values did not take into account the range I wanted.
+                                   # So I decided to make some synthetic data which preserved the statistical patterns of the original dataset and allowed the model to handle a wider range of inputs while maintaining prediction accuracy.
+
+2. Feature Impact Analysis for Synthetic Data Generation:
    - numerical_analysis.py         # Analyze impact of numerical features using quartile groups
    - categorical_analysis.py       # Analyze impact of categorical features and determine baselines
 
-2. Synthetic_Data_Generator.py     # Generate synthetic data using analyzed impacts and baselines
+3. Synthetic_Data_Generator.py     # Generate synthetic data using analyzed impacts and baselines
                                    # Uses weights for numerical features and modifiers for categorical features
 
-3. main.ipynb                      # Combine datasets, train model, and create pipeline for deployment
+4. main.ipynb                      # Combine datasets (original and synthetic), train & test model, and create pipeline for deployment
